@@ -1,0 +1,37 @@
+{
+  "name": "solana-telegram-bot-for-tracking-wallet",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon src/index.ts",
+    "watch": "tsc -w"
+  },
+  "keywords": [
+    "solana",
+    "telegram",
+    "bot",
+    "wallet",
+    "tracking"
+  ],
+  "author": "acmicpc0614",
+  "license": "ISC",
+  "description": "A Telegram bot for tracking Solana wallet transactions.",
+  "devDependencies": {
+    "@types/bs58": "^4.0.4",
+    "@types/node": "^22.10.2",
+    "@types/node-telegram-bot-api": "^0.64.7",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.8",
+    "base58": "^2.0.1",
+    "dotenv": "^16.4.7",
+    "node-fetch": "^3.2.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "sqlite3": "^5.1.7",
+    "telegraf": "^4.0.0"
+  }
+}
