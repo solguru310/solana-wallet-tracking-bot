@@ -21,26 +21,7 @@ export async function getTransactionDetails(
     const balanceChange = (postBalances[0] - preBalances[0]) / LAMPORTS_PER_SOL;
 
     const details = {
-      signature,
-      timestamp,
-      balanceChange: `${balanceChange} SOL`,
-      sender: txn.transaction.message.accountKeys[0].pubkey.toString(),
-      instructions: instructions.map((ix: any) => {
-        if ("parsed" in ix) {
-          return {
-            program: ix.program,
-            type: ix.parsed.type,
-            receiver: ix.parsed.info.destination,
-          };
-        }
-        return {
-          programId: ix.programId.toString(),
-        };
-      }),
-      logs: txn.meta.logs,
-    };
-
-    return details;
+      ....
   }
 }
 
