@@ -1,5 +1,5 @@
 # solana-wallet-tracking-bot
-A Solana-based Telegram bot designed to track wallet activities and interactions with the Pump.fun platform, enabling users to monitor transactions, balances, and on-chain activity seamlessly
+#Solana #Wallet #Tracking #Bot: The Solana #Pumpfun #tracking #bot integrates seamlessly with #Telegram, providing real-time tracking of #Solana wallet activities, including transactions, balances, and interactions with the Pump.fun platform for efficient on-chain monitoring.
 
 ## Key Features
 - A system for tracking Solana wallet transactions that interact with the Pump.fun platform.
@@ -44,4 +44,4 @@ npm start
 ## Contact Info
 Telegram: [@dwlee918](https://t.me/@dwlee918)
 
-X: [@derricklee918](https://x.com/derricklee918)
+X: [@dwlee918](https://x.com/dwlee918)
