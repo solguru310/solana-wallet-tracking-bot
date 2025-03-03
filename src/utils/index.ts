@@ -46,24 +46,24 @@ export class WalletTracker {
             )
         `);
   }
-  private saveLog(message: string): void {
-    const timestamp = new Date().toISOString();
-    const logMessage = `[${timestamp}] ${message}\n`;
+  // private saveLog(message: string): void {
+  //   const timestamp = new Date().toISOString();
+  //   const logMessage = `[${timestamp}] ${message}\n`;
 
-    fs.appendFileSync("wallet_tracker.txt", logMessage);
-  }
+  //   fs.appendFileSync("wallet_tracker.txt", logMessage);
+  // }
 
-  private loadTrackedWallets(): void {
-    this.db.all("SELECT * FROM tracked_wallets", (err, rows: WalletTrack[]) => {
-      if (err) {
-        console.error("Error loading wallets:", err);
-        return;
-      }
-      rows.forEach((row) => {
-        this.trackedWallets.set(row.address, row);
-      });
-    });
-  }
+  // private loadTrackedWallets(): void {
+  //   this.db.all("SELECT * FROM tracked_wallets", (err, rows: WalletTrack[]) => {
+  //     if (err) {
+  //       console.error("Error loading wallets:", err);
+  //       return;
+  //     }
+  //     rows.forEach((row) => {
+  //       this.trackedWallets.set(row.address, row);
+  //     });
+  //   });
+  // }
 
   private async trackNewWallet(address: string): Promise<void> {
     const timestamp = Date.now();
